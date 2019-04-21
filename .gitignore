@@ -1,5 +1,6 @@
 # Build and Release Folders
 /glitch-files
+/node_modules
 
 # Other files and folders
 .env
