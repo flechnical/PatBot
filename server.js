@@ -1,3 +1,6 @@
+// Import the process.env object.
+require("dotenv").config();
+
 // Create new Discord bot and defines function upon Discord message event.
 
 const Discord = require("discord.js");
