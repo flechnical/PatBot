@@ -1,0 +1,24 @@
+{
+  "name": "patbot",
+  "version": "0.0.1",
+  "description": "We should take unrelated voice-channel text-chat from general and push it somewhere else (pat = private automatic text-chats)!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/flechnical/PatBot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "patrick",
+    "star",
+    "discord"
+  ]
+}
