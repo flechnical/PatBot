@@ -165,7 +165,7 @@ This will download all the scripts our server needs to function.
 
 ![npm install](https://user-images.githubusercontent.com/3502217/57024312-924b0500-6c34-11e9-812c-403c953292ba.png)
 
-You will notice we have a new "package-lock.json"-file and a U next to it. Also the Y on the left has a 1 in it. This just means that we have made changes to the code. We can safely ignore this as it would only matter if we wanted to share the code with others to collaborate.
+You will notice we have a new "package-lock.json"-file and a U next to it. Also the Y on the left has a 1 on it. This just means that we have made changes to the code. We can safely ignore this as it would only matter if we wanted to share the code with others to collaborate.
 
 ![git changes](https://user-images.githubusercontent.com/3502217/57024324-9545f580-6c34-11e9-9773-f9f8c4cc5cdc.png)
 
@@ -174,6 +174,8 @@ Next we rename the ".env.example"-file to ".env" and insert the bot token from t
 ![Bot Token](https://user-images.githubusercontent.com/3502217/57024528-22894a00-6c35-11e9-9fbd-cbdc36366a8e.png)
 
 ![Bot Token VS Code](https://user-images.githubusercontent.com/3502217/57024787-c1ae4180-6c35-11e9-896a-7a2a9544561f.png)
+
+> The bot token is how your bot logs into his account (it's a username and password in one). Do not share this token with anyone or they could log into the bots account and potentially do damage on your Discord Server.
 
 Save the file changes and click into the Terminal. Now enter this and hit `Enter`:
 
