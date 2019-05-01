@@ -233,7 +233,7 @@ When you're finished set the variable `SETUP` above to `false` and save the ".en
 node server
 ```
 
-And now our bot should be fully functional and logged in from our local server. When you join a voice channel you will be assigned the corresponding role and the text channel permissions will be applied to your accound until you leave the voice channel.
+And now our bot should be fully functional and logged in from our local server. When you join a voice channel you will be assigned the corresponding role and the text channel permissions will be applied to your account until you leave the voice channel.
 
 > If you are using Discord with the account that has administrator rights on your Server, private text channels will always be visible to you and you will always be able to write texts in the general channel. To test out the bot's features you can create a dummy Discord account and invite the dummy to the Server. This way you can experience what a normal non-administrator member of your Server would see.
 
