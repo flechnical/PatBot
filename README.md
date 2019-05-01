@@ -187,7 +187,7 @@ Your bot is now running on our local PC and should be logged in on the Discord S
 
 ![bot online](https://user-images.githubusercontent.com/3502217/57025129-9f68f380-6c36-11e9-9719-0bd55b31ffba.png)
 
-Now we have to set up the roles we want to assign to a member who joins a certain voice channel. Head into the Server Settings and add the Roles `In Voice Channel 1` and `In Voice Channel 2`. If you want you can also enable "Display role members separately from online members" to show your Server members who are playing together (this only works if they don't have any other roles that have this option enabled):
+Now we have to set up the roles we want to assign to a member who joins a certain voice channel. Head into the Server Settings and add the Roles `In Voice Channel 1` and `In Voice Channel 2`. If you want you can also enable "Display role members separately from online members" to show to your Server members, who is currently playing together (this only works if they don't also have another role that have this option enabled):
 
 ![Create Roles](https://user-images.githubusercontent.com/3502217/57025798-7d707080-6c38-11e9-8fde-0ab2a55460e1.png)
 
@@ -199,7 +199,7 @@ Members with one of the two new roles are not allowed to send messages in the ge
 
 ![general permissions](https://user-images.githubusercontent.com/3502217/57026173-6aaa6b80-6c39-11e9-87bb-e805486f0022.png)
 
-If you want to hide a private text channel we can set it so it only shows up to a member who is in a certain voice channel. Create the new text channel and make it a "Private Channel":
+If you want to hide a private text channel we can set it so it only shows up to a member who is in a certain voice channel. To do this, create the new text channel and make it a "Private Channel":
 
 ![private text channel](https://user-images.githubusercontent.com/3502217/57026588-79dde900-6c3a-11e9-8f02-18bc37de3537.png)
 
@@ -225,13 +225,15 @@ Then remove the role `In Voice Channel 1` from your account, add `In Voice Chann
 
 ![Add IDs 2](https://user-images.githubusercontent.com/3502217/57027971-181f7e00-6c3e-11e9-9971-da3d3be39540.png)
 
-When you're finished set the variable `SETUP` above to `false` and save the ".env"-file. Then click into the Terminal and press `CTRL + C` to stop the server. Restart it by running
+> Make sure, not to include any spaces around the `=` and `,`
+
+When you're finished set the variable `SETUP` above to `false` and save the ".env"-file. Then click into the Terminal and press `CTRL + C` to stop the server. Restart it by running:
 
 ```
 node server
 ```
 
-again and your bot should be fully functional and logged in from our local server.
+And now our bot should be fully functional and logged in from our local server. When you join a voice channel you will be assigned the corresponding role and the text channel permissions will be applied to your accound until you leave the voice channel.
 
 > If you are using Discord with the account that has administrator rights on your Server, private text channels will always be visible to you and you will always be able to write texts in the general channel. To test out the bot's features you can create a dummy Discord account and invite the dummy to the Server. This way you can experience what a normal non-administrator member of your Server would see.
 
