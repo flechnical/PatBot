@@ -1,6 +1,6 @@
 {
   "name": "patbot",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "We should take unrelated voice-channel text-chat from general and push it somewhere else (pat = private automatic text-chats)!",
   "main": "server.js",
   "scripts": {
@@ -11,15 +11,17 @@
     "dotenv": "^7.0.0"
   },
   "engines": {
-    "node": "8.x"
+    "node": "^10.15.3"
   },
   "repository": {
-    "url": "https://github.com/flechnical/PatBot"
+    "url": "https://github.com/flechnical/patbot"
   },
   "license": "MIT",
   "keywords": [
     "patrick",
     "star",
-    "discord"
+    "discord",
+    "discord.js",
+    "bot"
   ]
 }
