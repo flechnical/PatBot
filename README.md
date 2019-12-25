@@ -36,14 +36,14 @@ Discord.js is a JavaScript library that provides simple functions that can be ru
 
 The bot in this repository is not a .exe file you can download on your computer and install. It is a script that has to run on a server. So for testing and configuration, we will set up a server on our own PC. We will then download the source code and tell our server to run it. The code will connect to the Internet from our PC and will log into the bot account we will create.
 
-In summary these are the necessary steps to set up our bot:
+#### In summary these are the necessary steps to set up our bot:
 
-1. Be an administrator on the Discord Server we want to add the bot to
-1. Create a new bot account on Discord and add it to our Discord Server
-1. Download software to create a server on our local PC
-1. Download the code from this repository
-1. Edit and test the code locally
-1. Host the bot on a server on the Internet (so it can be online forever and does not go offline when you turn off your PC)
+1. [Be an administrator on the Discord Server we want to add the bot to](#1-discord-server-setup)
+1. [Create a new bot account on Discord and add it to our Discord Server](#2-creating-and-adding-the-bots-account)
+1. [Download software to create a server on our local PC](#3-creating-a-local-server-for-testing-and-configuration)
+1. [Download the code from this repository](#4-downloading-the-code)
+1. [Edit and test the code locally](#5-configuring-and-testing-the-code-locally)
+1. [Host the bot on a server on the Internet (so it can be online forever and does not go offline when you turn off your PC)](#6-hosting-the-bot)
 
 ### 1. Discord Server setup
 
@@ -253,7 +253,7 @@ If you want to support me you can use my [referral link](https://www.ionos.de/pr
 
 Sign up for the "VPS S plan" and pick Linux Ubuntu as the operating system. Open the `Cloud Panel` on the IONOS website, choose the server we have just created, click on the `Actions` button above and click on "Access KVM Console". This shows you a "live-stream" of the monitor output of the server we just created. You can enter text and execute commands.
 
-#### Setup SSH on VPS to be able to run code from our local client shell (on your Windows PC)
+##### Setup SSH on VPS to be able to enter code from our local client shell (on your Windows PC)
 
 With the KVM Console open we can login (you can find the username and password in the Cloud Panel below your server) and execute the following commands to enable SSH access:
 
@@ -287,7 +287,7 @@ To make management of our remote server easier, we can store a secret combinatio
 
 Now you should be able to `ssh` into your server without a password prompt. If you want to access the server from another PC you will have to copy the ssh-key from your users folder on this PC to the other PC or just enter the password every time you want to access the server.
 
-#### Server setup (final step 🙌)
+##### Server setup (final step 🙌)
 
 To run the Discord bot on our server we have to do the same things we did on our local PC. First we install all the necessary server software, download the bot code, add our custom ".env"-file and then we tell the server to run the code.
 
@@ -296,16 +296,22 @@ Open a PowerShell window and enter: `ssh USERNAME@IP`
 Then execute the following commands:
 
 ```
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+```
+
+> Note: This will add a repository that includes the (at the time of writing) newest versions of node.js and npm. Read more here: [linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/#installing-nodejs-and-npm-from-nodesource](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/#installing-nodejs-and-npm-from-nodesource)
+
+```
 sudo apt install nodejs
 ```
 
-```
-sudo apt install npm
-```
+> Installs both node.js and npm.
 
 ```
 sudo apt install git
 ```
+
+> git might already be pre-installed in Ubuntu in some cases.
 
 ```
 cd /home
@@ -314,6 +320,8 @@ cd /home
 ```
 git clone https://github.com/flechnical/patbot.git
 ```
+
+> If this fails, your user account most likely does not have the permission to write in the home directory. Use this command to give yourself write-access: "`sudo chmod -R a+rw /home`" and then try the git command again.
 
 ```
 cd patbot
