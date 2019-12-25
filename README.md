@@ -45,6 +45,8 @@ The bot in this repository is not a .exe file you can download on your computer 
 1. [Edit and test the code locally](#5-configuring-and-testing-the-code-locally)
 1. [Host the bot on a server on the Internet (so it can be online forever and does not go offline when you turn off your PC)](#6-hosting-the-bot)
 
+> Tip: Use the back button in your browser to jump back up to this table of contents after clicking on a topic.
+
 ### 1. Discord Server setup
 
 You can't just add a bot to any server you are a member of. You have to either create your own or be an administrator on a server. I will create a new Discord Server for this tutorial. You can skip this step if you already have a server.
